@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- Connect HTML to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>About Me</h1>
+        <p>Welcome to my personal profile page</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#academic">Academic</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="content-grid">
+
+        <!-- PROFILE -->
+        <section id="profile">
+            <h2>Student Profile</h2>
+
+            <span class="badge">Student</span>
+
+            <img
+                src="https://i.postimg.cc/44VfCYYt/Whats-App-Image-2026-10-07-at-14-12-58.jpg"
+                alt="My Profile Photo"
+                class="profile-photo"
+            >
+
+            <div class="profile-info">
+                <p>
+                    Hello my name is <strong>Stivani Anggraini.</strong>
+                    Currently I am a student of Information System.
+                </p>
+
+                <p>
+                    Currently I am studying about creating a personal
+                    profile page.
+                </p>
+
+                <h3>Personal Information</h3>
+
+                <p>
+                    <strong>Name:</strong> Stivani Anggraini<br>
+                    <strong>NIM:</strong> 2582003<br>
+                    <strong>Study Program:</strong> Information System<br>
+                    <strong>Email:</strong>
+                    <a href="mailto:stevanianggraini70@gmail.com">
+                        stevanianggraini70@gmail.com
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- HOBBIES -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+
+            <p>I have several hobbies, such as:</p>
+
+            <ul>
+                <li>Running</li>
+                <li>Drawing</li>
+                <li>Touring</li>
+                <li>Cooking</li>
+            </ul>
+        </section>
+
+        <!-- ACADEMIC -->
+        <section id="academic">
+            <h2>Academic Record</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Semester</th>
+                            <th>Academic Year</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Odd Semester</td>
+                            <td>2025/2026</td>
+                            <td>3.82</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Even Semester</td>
+                            <td>2025/2026</td>
+                            <td>3.72</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Stivani Anggraini"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="stevanianggraini70@gmail.com"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Enter your message"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Stivani Anggraini - 2582003</p>
+    </footer>
+
+</body>
+</html>

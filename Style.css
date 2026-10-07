@@ -1,0 +1,309 @@
+/*
+    GLOBAL STYLING
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #17694a;
+}
+
+
+/*
+    HEADER
+*/
+
+header {
+    padding: 32px 20px;
+    background-color: #17694a;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+
+/*
+    NAVIGATION
+*/
+
+nav {
+    padding: 14px 20px;
+    background-color: white;
+    border-bottom: 1px solid #d7e1dc;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 10px;
+    color: #17694a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+    MAIN
+*/
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 24px auto;
+}
+
+
+/*
+    CSS GRID
+*/
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+
+/*
+    SECTION
+*/
+
+section {
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #d7e1dc;
+    border-radius: 16px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #17694a;
+}
+
+
+/*
+    PROFILE - FLEXBOX
+*/
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #17694a;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+
+/*
+    BADGE - POSITIONING
+*/
+
+.badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    background-color: #17694a;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+/*
+    HOBBIES
+*/
+
+#hobbies ul {
+    padding-left: 24px;
+}
+
+#hobbies li {
+    margin-bottom: 6px;
+}
+
+
+/*
+    TABLE
+*/
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #d7e1dc;
+    text-align: center;
+}
+
+th {
+    background-color: #17694a;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+
+/*
+    CONTACT FORM
+*/
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+form div {
+    display: grid;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b9c8c0;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #17694a;
+    outline-offset: 2px;
+}
+
+
+/*
+    BUTTON
+*/
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #17694a;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d5038;
+}
+
+
+/*
+    FOOTER
+*/
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/*
+    RESPONSIVE DESIGN
+*/
+
+@media (min-width: 768px) {
+
+    /* FLEXBOX menjadi horizontal */
+    #profile {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /* GRID menjadi 2 kolom */
+    .content-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Profile memenuhi 2 kolom */
+    #profile {
+        grid-column: 1 / -1;
+    }
+
+    /* Contact memenuhi 2 kolom */
+    #contact {
+        grid-column: 1 / -1;
+    }
+}
